@@ -55,6 +55,12 @@ a {
 	margin: 0 auto;
 }
 
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
 .mobile-nav {
 	display: flex;
 }
@@ -98,7 +104,7 @@ a {
 .menu__items ul {
 	display: flex;
 	justify-content: space-between;
-	gap: 40px;
+	gap: 30px;
 }
 
 .menu__items ul li {
@@ -106,6 +112,7 @@ a {
 	justify-content: center;
 	align-items: center;
 	gap: 4px;
+	
 }
 
 .menu__items ul li img {
@@ -118,9 +125,12 @@ a {
 	align-items: center;
 }
 
+.login-button {
+	width: auto;
+}
+
 .login-button p {
-	font-size: 19px;
-	white-space: nowrap;
+	font-size: 18px;
 	padding: 8px 16px;
 }
 
