@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
-    <link rel="stylesheet" href="/styles/index.css">
-    <title>Gestiona los proyectos de tu equipo desde cualquier lugar | Trello</title>
-</head>
-<body>
-    <nav role="navigation">
-        <div>
-            <img src="/media/logos/trello-logo.png" alt="Logo de Trello">
-        </div>
-        <div>
-            <img src="/media/icons/menu-hamburguesa.svg" alt="Icono de menú de hamburguesa">
-        </div>
-    </nav>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+		/>
+		<link rel="stylesheet" href="/styles/index.css" />
+		<title>
+			Gestiona los proyectos de tu equipo desde cualquier lugar | Trello
+		</title>
+	</head>
+	<body>
+		<header>
+			<nav role="navigation" class="mobile-nav">
+				<div class="nav__menu container">
+					<div class="trello-logo">
+						<img src="/media/logos/trello-logo.png" alt="Logo de Trello" />
+					</div>
+					<div class="menu-button" role="button">
+						<img
+							src="/media/icons/menu-hamburguesa.svg"
+							alt="Icono de menú de hamburguesa"
+						/>
+					</div>
+				</div>
+			</nav>
+            <nav role="navigation" class="desktop-nav">
+				<div class="nav__menu container">
+					<div class="trello-logo">
+						<img src="/media/logos/trello-logo.png" alt="Logo de Trello" />
+					</div>
+					<div class="menu__items">
+                        <ul>
+                            <li>Funciones<img src="/media/icons/down-arrow.svg"/></li>
+                            <li>Soluciones<img src="/media/icons/down-arrow.svg"/></li>
+                            <li>Planes<img src="/media/icons/down-arrow.svg"/></li>
+                            <li>Precios</li>
+                            <li>Recursos<img src="/media/icons/down-arrow.svg"/></li>
+                        </ul>
+                    </div>
+				</div>
+                <div class="login">
+                    <div class="login-button" role="button">
+                        <p>Iniciar sesión</p>
+                    </div>
+                    <div class="login-button" role="button"><p>Obtener Trello gratis</p></div>
+                </div>
+			</nav>
+		</header>
+		<main>
+			<section id="hero">
+				<div class="advise">
+					<div class="advise__text container"></div>
+					<p>
+						Accelerate your teams' work with Atlassian Intelligence (AI)
+						features 🤖 now available for all Premium and Enterprise!
+						<a href="#">Learn more</a>
+					</p>
+				</div>
+                <div class="presentation"></div>
+			</section>
+		</main>
+	</body>
 </html>
