@@ -46,7 +46,7 @@ a {
     --text-light-color: ;
     --text-secondary-color: ;
     --primary-color: #0065ff;
-    --primary-color-dark: ;
+    --primary-color-dark: #4752cc;
     --container-width: 95%;
 }
 
@@ -57,21 +57,20 @@ a {
 
 .mobile-nav {
 	display: flex;
-    padding: 4px;
-}
-.desktop-nav {
-	display: none;
 }
 
+
 .nav__menu {
+	width: 100%;
 	display: flex;
 	align-items: center;
     justify-content: space-between;
+	
 }
 
 .trello-logo {
-	width: 120px;
-	padding: 4px 0;
+	width: 116px;
+	padding: 12px 8px;
 }
 
 .trello-logo img {
@@ -79,7 +78,7 @@ a {
 }
 
 .menu-button {
-	width: 40px;
+	width: 32px;
 }
 
 .menu-button img {
@@ -92,9 +91,14 @@ a {
 	align-items: center;
 }
 
+.desktop-nav {
+	display: none;
+}
+
 .menu__items ul {
 	display: flex;
 	justify-content: space-between;
+	gap: 40px;
 }
 
 .menu__items ul li {
@@ -115,20 +119,39 @@ a {
 }
 
 .login-button p {
+	font-size: 19px;
 	white-space: nowrap;
-	padding: 4px 12px;
+	padding: 8px 16px;
 }
 
-/* 
-.advise {
+.blue {
+	color: #fff;
+	background-color: var(--primary-color);
+}
+
+
+#advise {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	background-color: var(--contrast-color);
+	padding: 16px;
 }
 
 .advise__text {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .advise__text p {
 	text-align: center;
-} */
+	line-height: 24px;
+}
+
+.advise__text p a {
+	color: var(--primary-color-dark);
+	text-decoration: underline;
+}

@@ -1,44 +1,44 @@
-
 @media (min-width: 481px) and (max-width: 1023px) {
-    
 }
 
 /* Media query para dispositivos de escritorio (mayores a 1024px y hasta 1439px) */
 @media (min-width: 1024px) and (max-width: 1439px) {
-    :root {
-        --container-width: 85%;
-    }
+	:root {
+		--container-width: 95%;
+	}
 
-    .mobile-nav {
-        display: none;
-    }
+	.mobile-nav {
+		display: none;
+	}
 
-    .desktop-nav {
-        display: flex;
-    }
+	.desktop-nav {
+		display: flex;
+	}
 
-    .nav__menu {
-        justify-content: flex-start;
-        gap: 20px;
-    }
+	.nav__menu {
+		justify-content: flex-start;
+		gap: 20px;
+	}
 
+    
 }
 
 /* Media query para dispositivos de escritorio XXL (mayores a 1440px) */
 @media (min-width: 1440px) {
-    :root {
-        --container-width: 75%;
-    }
+	:root {
+		--container-width: 85%;
+	}
+
 	.mobile-nav {
-        display: none;
-    }
+		display: none;
+	}
 
-    .desktop-nav {
-        display: flex;
-    }
+	.desktop-nav {
+		display: flex;
+	}
 
-    .nav__menu {
-        justify-content: flex-start;
-        gap: 20px;
-    }
+	.nav__menu {
+		justify-content: flex-start;
+		gap: 20px;
+	}
 }
