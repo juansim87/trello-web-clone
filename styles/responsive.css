@@ -1,4 +1,22 @@
 @media (min-width: 481px) and (max-width: 1023px) {
+	
+	:root {
+		--text-title-size: 44px;
+		--text-title-line-height: 52px;
+	}
+
+	.form__inputs {
+		width: auto;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 12px;
+	}
+
+	.form__inputs label {
+		display: inherit;
+	}
+
 }
 
 /* Media query para dispositivos de escritorio (mayores a 1024px y hasta 1439px) */
@@ -28,6 +46,7 @@
 	:root {
 		--container-width: 90%;
 	}
+
 	.mobile-nav {
 		display: none;
 	}

@@ -6,8 +6,7 @@
 
 html,
 body {
-	font-family: Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-family: "Noto Sans", sans-serif;
 }
 
 h1,
@@ -39,18 +38,20 @@ a {
 }
 
 :root {
-    --accent-bg-color: ;
-	--title-color: ;
+	--primary-color: #0065ff;
+	--primary-color-dark: #4752cc;
 	--contrast-color: #deebff;
-    --text-color: #000000;
-    --text-light-color: ;
-    --text-secondary-color: ;
-    --primary-color: #0065ff;
-    --primary-color-dark: #4752cc;
-    --container-width: 95%;
+	--text-color: #000000;
+	--text-secondary-color: #fff;
+	--container-width: 100%;
+	--text-title-size: 29px;
+	--text-title-line-height: 42px;
+	--text-subtitle-size: 24px;
+	--text-pbig-size: 20px;
+	--text-button-size: 18px;
 }
 
-.container{
+.container {
 	width: var(--container-width);
 	margin: 0 auto;
 }
@@ -65,13 +66,12 @@ header {
 	display: flex;
 }
 
-
 .nav__menu {
 	width: 100%;
 	display: flex;
 	align-items: center;
-    justify-content: space-between;
-	
+	justify-content: space-between;
+	padding: 0 12px;
 }
 
 .trello-logo {
@@ -112,7 +112,6 @@ header {
 	justify-content: center;
 	align-items: center;
 	gap: 4px;
-	
 }
 
 .menu__items ul li img {
@@ -130,15 +129,14 @@ header {
 }
 
 .login-button p {
-	font-size: 18px;
+	font-size: var(--text-button-size);
 	padding: 8px 16px;
 }
 
-.blue {
-	color: #fff;
+.blue-button {
+	color: var(--text-secondary-color);
 	background-color: var(--primary-color);
 }
-
 
 #advise {
 	width: 100%;
@@ -164,4 +162,110 @@ header {
 .advise__text p a {
 	color: var(--primary-color-dark);
 	text-decoration: underline;
+}
+
+#hero {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url(//images.ctfassets.net/rz1oowkt5gyp/6bFuTiN5YQ78rFkHb3aJlo/b608362…/white-wave-mobile.svg)
+			center bottom -0.5px / 100% 24% no-repeat scroll padding-box border-box,
+		linear-gradient(60deg, rgb(82, 67, 170), rgb(237, 80, 180)) 0% 0% / auto
+			no-repeat scroll padding-box border-box rgb(82, 67, 170);
+}
+
+.hero__content {
+	width: var(--container-width);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--text-secondary-color);
+	gap: 24px;
+}
+
+.hero__texts {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 120px;
+	gap: 12px;
+}
+
+.hero__texts h1 {
+	font-size: var(--text-title-size);
+	line-height: var(--text-title-line-height);
+}
+
+.hero__texts p {
+	font-size: var(--text-pbig-size);
+	line-height: 30px;
+}
+
+.hero__form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.form__inputs {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form__inputs label {
+	display: none;
+}
+
+.form__inputs label input {
+	padding: 12px;
+	border-radius: 4px;
+	border: none;
+}
+
+.register-button {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary-color);
+	border-radius: 4px;
+	padding: 12px;
+}
+
+.hero-video {
+	width: 100%;
+	color: #ffffffcc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.hero-video p {
+	text-decoration: underline;
+}
+
+.hero-video img {
+	width: 22px;
+}
+
+.hero__img {
+	width: 95%;
+	padding: 16px;
+}
+
+.hero__img img {
+	width: 100%;
 }
