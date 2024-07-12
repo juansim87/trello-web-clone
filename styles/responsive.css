@@ -96,7 +96,7 @@
 
 	.hero__img {
 		width: 528px;
-		margin-right: -100px;
+		margin-right: -67px;
 		flex: 1;
 	}
 
@@ -118,7 +118,9 @@
 		flex: 1;
 		gap: 12px;
 	}
-}
+
+	.selected {
+		box-shadow: 10px 10px 14px -8px rgba(0,0,0,0.24);}
 
 /* Media query para dispositivos de escritorio XXL (mayores a 1440px) */
 @media (min-width: 1440px) {
