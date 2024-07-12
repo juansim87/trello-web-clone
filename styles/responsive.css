@@ -1,9 +1,9 @@
 @media (min-width: 481px) {
-	
 	:root {
 		--container-width: 85%;
 		--text-title-size: 44px;
 		--text-title-line-height: 52px;
+		--text-subtitle-size: 36px;
 	}
 
 	.form__inputs {
@@ -20,6 +20,19 @@
 
 	.register-button {
 		width: auto;
+	}
+
+	.productivy__texts {
+		width: 65%;
+		gap: 12px;
+	}
+
+	.headings h2 {
+		font-weight: 500;
+		line-height: 50px;
+	}
+
+
 }
 
 /* Media query para dispositivos de escritorio (mayores a 1024px y hasta 1439px) */
@@ -27,6 +40,10 @@
 	:root {
 		--container-width: 90%;
 		/* el container se vuelve a extender con laptop respecto a tablet */
+	}
+
+	.not-in-mobile {
+		display: inherit;
 	}
 
 	.mobile-nav {
@@ -86,8 +103,21 @@
 	.hero__img {
 		align-self: flex-end;
 	}
-    
-	
+
+	.productivity__graphics {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	.graphics__carousel {
+		flex: 2;
+		order: 1;
+	}
+
+	.graphics__cards {
+		flex: 1;
+		gap: 12px;
+	}
 }
 
 /* Media query para dispositivos de escritorio XXL (mayores a 1440px) */
@@ -104,6 +134,4 @@
 		justify-content: flex-start;
 		gap: 20px;
 	}
-
-}
 }
