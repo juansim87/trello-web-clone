@@ -20,8 +20,8 @@
 	</head>
 	<body>
 		<header>
-			<nav role="navigation" class="mobile-nav container">
-				<div class="nav__menu">
+			<nav role="navigation" class="mobile-nav">
+				<div class="nav__menu container">
 					<div class="trello-logo">
 						<img src="/media/logos/trello-logo.png" alt="Logo de Trello" />
 					</div>
@@ -33,7 +33,7 @@
 					</div>
 				</div>
 			</nav>
-			<nav role="navigation" class="desktop-nav container">
+			<nav role="navigation" class="desktop-nav">
 				<div class="nav__menu container">
 					<div class="trello-logo">
 						<img src="/media/logos/trello-logo.png" alt="Logo de Trello" />
@@ -80,37 +80,90 @@
 					</p>
 				</div>
 			</section>
+
 			<section id="hero">
-				<div class="hero__content">
-					<div class="hero__texts">
-						<h1>
-							Trello unifica tus tareas, compañeros de equipo y herramientas
-						</h1>
-						<p>Mantenlo todo en el mismo lugar, aunque tu equipo no lo esté.</p>
-					</div>
-					<div class="hero__form">
-						<div class="form__inputs">
-							<label for="email">
-								<input
-									type="email"
-									id="email"
-									placeholder="Correo electrónico"
-								/>
-							</label>
-							<div class="register-button blue-button" role="button">
-								<p>Regístrate, ¡es gratis!</p>
+				<div class="hero__content container">
+					<div class="hero__info">
+						<div class="hero__texts">
+							<h1>
+								Trello unifica tus tareas, compañeros de equipo y herramientas
+							</h1>
+							<p>
+								Mantenlo todo en el mismo lugar, aunque tu equipo no lo esté.
+							</p>
+						</div>
+						<form action="">
+							<div class="hero__form">
+								<div class="form__inputs">
+									<label for="email" class="email-label">
+										<input
+											type="email"
+											id="email"
+											placeholder="Correo electrónico"
+										/>
+									</label>
+									<div
+										class="register-button blue-button"
+										role="button"
+										type="submit"
+									>
+										<p>Regístrate, ¡es gratis!</p>
+									</div>
+								</div>
+
+								<div class="hero__video">
+									<p>Ver el vídeo</p>
+									<img
+										src="/media/icons/play-button.png"
+										alt="Botón de play del vídeo"
+									/>
+								</div>
 							</div>
-						</div>
-						<div class="hero-video">
-							<p>Ver el vídeo</p>
-							<img src="/media/icons/play-button.png" alt="" />
-						</div>
+						</form>
 					</div>
 					<div class="hero__img">
 						<img
-							src="/media/images/trello-collage.png"
+							src="/media/images/trello-collage-laptop.png"
 							alt="Imagen collage de la aplicación de Trello"
 						/>
+					</div>
+				</div>
+			</section>
+			<section id="productivity">
+				<div class="productivity__content container">
+					<div class="productivy__texts">
+						<div class="headings">
+							<small>El Abc de Trello</small>
+							<h2>Un centro neurálgico de productividad</h2>
+						</div>
+						<p>
+							Sencillo, flexible y potente. Todo lo que necesitas son tableros,
+							listas y tarjetas para poder ver de forma clara quién está
+							haciendo qué y las tareas pendientes. Más información en nuestra
+							<a href="#">guía de inicio</a>
+						</p>
+					</div>
+					<div class="productivity__graphics">
+						<div class="graphics__images">
+							<div class="images__carousel">
+								<img
+									src="/media/images/trello-carrusel-1.webp"
+									alt="Imagen de la aplicación de Trello"
+									width="425px"
+								/>
+							</div>
+							<div class="images__card">
+								<div class="card__texts">
+									<h4>Tableros</h4>
+									<p>
+										Los tableros de Trello mantienen las tareas organizadas y
+										ayudan a que el trabajo avance. Podrás verlo todo de un solo
+										vistazo, desde las cosas pendientes a las que ya están
+										terminadas.
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>

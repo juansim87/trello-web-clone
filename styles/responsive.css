@@ -1,6 +1,7 @@
-@media (min-width: 481px) and (max-width: 1023px) {
+@media (min-width: 481px) {
 	
 	:root {
+		--container-width: 85%;
 		--text-title-size: 44px;
 		--text-title-line-height: 52px;
 	}
@@ -9,7 +10,7 @@
 		width: auto;
 		flex-direction: row;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 		gap: 12px;
 	}
 
@@ -17,12 +18,15 @@
 		display: inherit;
 	}
 
+	.register-button {
+		width: auto;
 }
 
 /* Media query para dispositivos de escritorio (mayores a 1024px y hasta 1439px) */
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) {
 	:root {
-		--container-width: 100%;
+		--container-width: 90%;
+		/* el container se vuelve a extender con laptop respecto a tablet */
 	}
 
 	.mobile-nav {
@@ -38,25 +42,68 @@
 		gap: 20px;
 	}
 
+	#hero {
+		padding-bottom: 200px;
+	}
+
+	.hero__content {
+		flex-direction: row;
+		gap: 20px;
+	}
+
+	.hero__info {
+		flex: 1;
+	}
+
+	.hero__texts {
+		text-align: left;
+	}
+
+	.hero__texts h1 {
+		line-height: 60px;
+	}
+
+	.hero__form {
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.form__inputs {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.hero__video {
+		justify-content: flex-start;
+	}
+
+	.hero__img {
+		width: 528px;
+		margin-right: -100px;
+		flex: 1;
+	}
+
+	.hero__img {
+		align-self: flex-end;
+	}
     
+	
 }
 
 /* Media query para dispositivos de escritorio XXL (mayores a 1440px) */
 @media (min-width: 1440px) {
 	:root {
-		--container-width: 90%;
+		--container-width: 80%;
 	}
 
 	.mobile-nav {
 		display: none;
 	}
 
-	.desktop-nav {
-		display: flex;
-	}
-
 	.nav__menu {
 		justify-content: flex-start;
 		gap: 20px;
 	}
+
+}
 }

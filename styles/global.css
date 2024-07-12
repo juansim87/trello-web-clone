@@ -43,7 +43,8 @@ a {
 	--contrast-color: #deebff;
 	--text-color: #000000;
 	--text-secondary-color: #fff;
-	--container-width: 100%;
+	--card-color: #02c8e7;
+	--container-width: 90%;
 	--text-title-size: 29px;
 	--text-title-line-height: 42px;
 	--text-subtitle-size: 24px;
@@ -56,22 +57,10 @@ a {
 	margin: 0 auto;
 }
 
-header {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-}
-
-.mobile-nav {
-	display: flex;
-}
-
 .nav__menu {
-	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 12px;
 }
 
 .trello-logo {
@@ -126,11 +115,14 @@ header {
 
 .login-button {
 	width: auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 8px;
 }
 
 .login-button p {
 	font-size: var(--text-button-size);
-	padding: 8px 16px;
 }
 
 .blue-button {
@@ -145,7 +137,7 @@ header {
 	align-items: center;
 	width: 100%;
 	background-color: var(--contrast-color);
-	padding: 16px;
+	padding: 16px 0;
 }
 
 .advise__text {
@@ -164,30 +156,43 @@ header {
 	text-decoration: underline;
 }
 
+
 #hero {
-	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: url(//images.ctfassets.net/rz1oowkt5gyp/6bFuTiN5YQ78rFkHb3aJlo/b608362…/white-wave-mobile.svg)
+	background: url(/media/images/white-wave-mobile.svg)
 			center bottom -0.5px / 100% 24% no-repeat scroll padding-box border-box,
 		linear-gradient(60deg, rgb(82, 67, 170), rgb(237, 80, 180)) 0% 0% / auto
 			no-repeat scroll padding-box border-box rgb(82, 67, 170);
+	background-blend-mode: normal, normal;
+	color: rgb(255, 255, 255);
 }
 
 .hero__content {
-	width: var(--container-width);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	color: var(--text-secondary-color);
-	gap: 24px;
+	gap: 28px;
+}
+
+.hero__info {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.hero__info form {
+	width: 100%;
 }
 
 .hero__texts {
-	width: 90%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -229,22 +234,23 @@ header {
 }
 
 .form__inputs label input {
+	width: 276px;
 	padding: 12px;
 	border-radius: 4px;
 	border: none;
 }
 
 .register-button {
-	width: 90%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--primary-color);
 	border-radius: 4px;
-	padding: 12px;
+	padding: 12px 28px;
+	
 }
 
-.hero-video {
+.hero__video {
 	width: 100%;
 	color: #ffffffcc;
 	display: flex;
@@ -253,11 +259,11 @@ header {
 	gap: 8px;
 }
 
-.hero-video p {
+.hero__video p {
 	text-decoration: underline;
 }
 
-.hero-video img {
+.hero__video img {
 	width: 22px;
 }
 
@@ -268,4 +274,17 @@ header {
 
 .hero__img img {
 	width: 100%;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap:16px;
+}
+
+.headings small {
+	text-transform: uppercase;
+	font-weight: 600;
 }
