@@ -57,8 +57,6 @@ a {
 	margin: 0 auto;
 }
 
-
-
 .nav__menu {
 	display: flex;
 	align-items: center;
@@ -336,23 +334,22 @@ a {
 	width: 100%;
 }
 
-.graphics__cards {
+.productivity__cards {
 	display: flex;
 	flex-direction: column;
 	
 }
 
-.card {
+.productivity-card {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: flex-end;
 	background-color: var(--card-color);
 	border-radius: 5px;
-	border: 0px;
 }
 
-.card__texts {
+.productivity-card__texts {
 	width: 98%;
 	display: flex;
 	flex-direction: column;
@@ -363,12 +360,12 @@ a {
 	border-bottom-right-radius: 5px;
 }
 
-.card__texts h4 {
+.productivity-card__texts h4 {
 	font-size: 15px;
 	font-weight: 600;
 }
 
-.card__texts p {
+.productivity-card__texts p {
 	line-height: 24px;
 }
 
@@ -381,3 +378,73 @@ a {
 	background-color: transparent;
 }
 
+.workflow__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.workflow__cards {
+	display: flex;
+	overflow-x: scroll;
+	gap: 20px 0;
+}
+
+.workflow__card__box {
+	height: 100%;
+	width: 268px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 20px 0;
+	border-radius: 5px;
+}
+
+.workflow__icon{
+	position: absolute;
+	width: 40px;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 6px;
+
+}
+
+.workflow__icon img{
+	width: 100%;
+}
+
+.workflow__card__content {
+	height: 90%;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 20px;
+}
+
+.orange-card {
+	background-color: #ff7452;
+}
+
+.blue-card {
+	background-color: #2684ff;
+}
+
+.green-card {
+	background-color: #57d9a3;
+}
+
+.yellow-card {
+	background-color: #ffc400;
+}
+
+.lightblue-card {
+	background-color: #00c7e5;
+}
+
+.pink-card {
+	background-color: #f99cdb;
+}

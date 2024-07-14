@@ -31,8 +31,6 @@
 		font-weight: 500;
 		line-height: 50px;
 	}
-
-
 }
 
 /* Media query para dispositivos de escritorio (mayores a 1024px y hasta 1439px) */
@@ -113,6 +111,7 @@
 	.productivity__graphics {
 		flex-direction: row;
 		align-items: flex-start;
+		gap: 32px;
 	}
 
 	.graphics__carousel {
@@ -120,14 +119,15 @@
 		order: 1;
 	}
 
-	.graphics__cards {
+	.productivity__cards {
 		flex: 1;
 		gap: 12px;
 	}
 
 	.selected {
-		box-shadow: 10px 10px 14px -8px rgba(0,0,0,0.24);}
-
+		box-shadow: 10px 10px 14px -8px rgba(0, 0, 0, 0.24);
+	}
+}
 /* Media query para dispositivos de escritorio XXL (mayores a 1440px) */
 @media (min-width: 1440px) {
 	:root {
