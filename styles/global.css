@@ -49,7 +49,7 @@ a {
 	--text-title-line-height: 42px;
 	--text-subtitle-size: 19px;
 	--text-pbig-size: 20px;
-	--text-button-size: 18px;
+	--text-button-size: 16px;
 }
 
 .container {
@@ -310,6 +310,7 @@ a {
 
 .headings h2 {
 	font-size: var(--text-subtitle-size);
+	line-height: 30px;
 }
 
 .paragraphs {
@@ -372,7 +373,6 @@ a {
 	display: none;
 }
 
-
 .not-selected {
 	background-color: transparent;
 }
@@ -413,7 +413,7 @@ a {
 .workflow__cards {
 	height: 260px;
 	display: flex;
-	gap: 20px 0;
+	gap: 30px;
 }
 
 .workflow__card__box {
@@ -424,19 +424,19 @@ a {
 	justify-content: flex-end;
 	padding-top: 20px;
 	border-radius: 8px;
-	box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.09);}
+	box-shadow: 0px 9px 5px -2px rgba(0,0,0,0.09);
+}
 
-.workflow__icon{
+.workflow__icon {
 	width: 46px;
 	background-color: #fff;
 	border-radius: 5px;
-	padding: 6px;
+	padding: 8px;
 	margin-top: -45px;
 }
 
-.workflow__icon img{
+.workflow__icon img {
 	width: 100%;
-	
 }
 
 .workflow__card__content {
@@ -450,6 +450,7 @@ a {
 	border-bottom-left-radius: 8px;
 	border-bottom-right-radius: 8px;
 	padding: 20px;
+	gap: 12px;
 }
 
 .workflow__card__texts {
@@ -459,3 +460,31 @@ a {
 	gap: 12px;
 }
 
+.workflow__card__texts h4 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.workflow__card__texts p {
+	line-height: 24px;
+    font-weight: 400;
+}
+
+.workflow__info {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 32px;
+}
+
+.action__button {
+	width: fit-content;
+	display: flex;
+	padding: 12px;
+	border: 1px solid var(--primary-color);
+	border-radius: 4px;
+}
+
+.action__button p {
+font-size: var(--text-button-size)}
