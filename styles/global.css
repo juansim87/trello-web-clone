@@ -337,7 +337,6 @@ a {
 .productivity__cards {
 	display: flex;
 	flex-direction: column;
-	
 }
 
 .productivity-card {
@@ -383,46 +382,8 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-}
-
-.workflow__cards {
-	display: flex;
-	overflow-x: scroll;
-	gap: 20px 0;
-}
-
-.workflow__card__box {
-	height: 100%;
-	width: 268px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	padding: 20px 0;
-	border-radius: 5px;
-}
-
-.workflow__icon{
-	position: absolute;
-	width: 40px;
-	background-color: #fff;
-	border-radius: 5px;
-	padding: 6px;
-
-}
-
-.workflow__icon img{
-	width: 100%;
-}
-
-.workflow__card__content {
-	height: 90%;
-	width: 100%;
-	background-color: #fff;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
-	padding: 20px;
+	padding: 60px 0;
+	gap: 40px;
 }
 
 .orange-card {
@@ -448,3 +409,53 @@ a {
 .pink-card {
 	background-color: #f99cdb;
 }
+
+.workflow__cards {
+	height: 260px;
+	display: flex;
+	gap: 20px 0;
+}
+
+.workflow__card__box {
+	height: 100%;
+	width: 320px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-top: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.09);}
+
+.workflow__icon{
+	width: 46px;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 6px;
+	margin-top: -45px;
+}
+
+.workflow__icon img{
+	width: 100%;
+	
+}
+
+.workflow__card__content {
+	height: 95%;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding: 20px;
+}
+
+.workflow__card__texts {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 12px;
+}
+
