@@ -41,10 +41,30 @@
 	}
 
 	.workflow__card__box {
-	width: 600px;}
+		width: 600px;
+	}
 
 	.workflow__card__content {
 		height: 90%;
+	}
+
+	.customization__content {
+		padding: 80px 0;
+	}
+
+	.customization__heading {
+		width: 50%;
+	}
+
+	.customization__cards {
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.customization__card {
+		max-width: 280px;
+		gap: 40px;
 	}
 }
 
@@ -65,7 +85,6 @@
 
 	.desktop-nav {
 		display: flex;
-		
 	}
 
 	.nav__menu {
@@ -146,11 +165,12 @@
 	}
 
 	.workflow__cards {
-		height: 300px
+		height: 300px;
 	}
 
 	.workflow__card__box {
-	width: 280px;}
+		width: 280px;
+	}
 
 	.workflow__card__content {
 		height: 90%;
@@ -186,7 +206,10 @@
 	.desktop-reverse-order {
 		flex-direction: row-reverse;
 	}
-	
+
+	.customization__heading {
+		width: 60%;
+	}
 }
 /* Media query para dispositivos de escritorio XXL (mayores a 1440px) */
 @media (min-width: 1440px) {
@@ -201,5 +224,15 @@
 	.nav__menu {
 		justify-content: flex-start;
 		gap: 20px;
+	}
+
+
+	.customization__cards {
+		width: 100%;
+	}
+
+	.customization__card {
+		width: auto;
+		flex: 1;
 	}
 }

@@ -48,7 +48,7 @@ a {
 	--text-title-size: 29px;
 	--text-title-line-height: 42px;
 	--text-subtitle-size: 21px;
-	--text-pbig-size: 20px;
+	--text-pbig-size: 19px;
 	--text-button-size: 16px;
 	--text-antetitle: 15px;
 	/* --nav-bar-height: 100px; */
@@ -621,3 +621,57 @@ a {
 	font-size: var(--text-pbig-size);
 	line-height: 30px;
 }
+
+.customization__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px 0;
+	gap: 40px;
+}
+
+.customization__cards {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 32px;
+}
+
+.customization__card {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+	background-color: #fafbfd;
+	padding: 20px;
+}
+
+.customization__card__heading {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.customization__card__image {
+	width: 100px;
+}
+
+.customization__card__image img {
+	width: 100%;
+}
+
+.customization__card__texts {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.customization__card__heading h3 {
+	font-size: 17px;
+    font-weight: 600;
+}
+
+.customization__card__heading p {
+	font-size: 15px;
+	line-height: 24px;
+}
+
