@@ -37,7 +37,7 @@
 	}
 
 	.workflow__cards {
-		height: 200px
+		min-height: 332px;
 	}
 
 	.workflow__card__box {
@@ -65,6 +65,7 @@
 
 	.desktop-nav {
 		display: flex;
+		
 	}
 
 	.nav__menu {
@@ -165,6 +166,26 @@
 		min-width: 238px;
 	}
 
+	.preview__heading__texts {
+		width: 75%;
+	}
+
+	.preview__card {
+		flex-direction: row;
+		gap: 60px;
+	}
+
+	.preview__texts__title img {
+		width: 24px;
+	}
+
+	.preview__image {
+		min-width: 456px;
+	}
+
+	.desktop-reverse-order {
+		flex-direction: row-reverse;
+	}
 	
 }
 /* Media query para dispositivos de escritorio XXL (mayores a 1440px) */
