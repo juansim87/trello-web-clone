@@ -51,6 +51,7 @@ a {
 	--text-pbig-size: 19px;
 	--text-button-size: 16px;
 	--text-antetitle: 15px;
+	--text-survey: 23px;
 	/* --nav-bar-height: 100px; */
 }
 
@@ -527,7 +528,6 @@ a {
 	justify-content: center;
 	padding: 40px 0;
 	gap: 40px;
-	
 }
 
 .preview__heading {
@@ -640,6 +640,7 @@ a {
 .customization__card {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	gap: 28px;
 	background-color: #fafbfd;
 	padding: 20px;
@@ -667,7 +668,7 @@ a {
 
 .customization__card__heading h3 {
 	font-size: 17px;
-    font-weight: 600;
+	font-weight: 600;
 }
 
 .customization__card__heading p {
@@ -675,3 +676,73 @@ a {
 	line-height: 24px;
 }
 
+.quotes__content {
+	display: flex;
+	flex-direction: column;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.quotes__texts {
+	display: flex;
+	flex-direction: column;
+	background-image: url(/media/images/quoting-marks.svg);
+	background-repeat: no-repeat;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	gap: 20px;
+	padding: 32px 20px;
+	
+}
+
+.quotes__texts__opinion p {
+	font-size: 24px;
+	line-height: 40px;
+}
+
+.quotes__author {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.author__name p {
+	font-size: 15px;
+	line-height: 24px;
+}
+
+.quotes__info {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.author__company {
+	width: 90px;
+}
+
+.author__company img {
+	width: 100%;
+}
+
+.quotes__survey {
+	display: flex;
+	flex-direction: column;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	background: linear-gradient(60deg, rgb(101, 84, 192), rgb(249, 156, 219)) 0%
+		0% / auto repeat scroll padding-box border-box rgb(101, 84, 192);
+	background-blend-mode: normal;
+	color: var(--text-secondary-color);
+	padding: 32px 20px;
+	gap: 32px;
+}
+
+.quotes__survey p {
+	font-size: var(--text-survey);
+	font-weight: 600;
+	line-height: 32px;
+}
+
+.quotes__survey a {
+	color: rgb(255, 255, 255, 0.8);
+}
