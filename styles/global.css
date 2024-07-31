@@ -828,6 +828,10 @@ a {
 	gap: 32px;
 }
 
+.plan__description p {
+	line-height: 24px;
+}
+
 .plan__description span {
 	font-size: 20px;
 	font-weight: 600;
@@ -853,6 +857,35 @@ a {
 	line-height: 32px;
 	text-align: center;
 }
+
+#engage {
+	background: linear-gradient(60deg, rgb(82, 67, 170), rgb(237, 80, 180)) 0% 0% /
+		auto repeat scroll padding-box border-box rgb(82, 67, 170);
+}
+
+.engage__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 48px 0;
+	gap:32px;
+}
+
+.engage__content h2 {
+	font-size: var(--text-subtitle-size);
+	color: #fff;
+}
+
+.engage__content .form__inputs {
+	flex-direction: column;
+	align-items: center;
+}
+
+footer {
+	background-color: #172b4d;
+	color: #fff;
+}
+
 
 /* ---Modificadores de estilo--- */
 
