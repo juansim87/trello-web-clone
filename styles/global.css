@@ -44,6 +44,8 @@ a {
 	--text-color: #000000;
 	--text-secondary-color: #fff;
 	--card-color: #02c8e7;
+	--selected-plan-color: #00b8d9;
+	--highlight-button-color: #e6fcff;
 	--container-width: 90%;
 	--text-title-size: 29px;
 	--text-title-line-height: 42px;
@@ -133,11 +135,6 @@ a {
 
 .login-button p {
 	font-size: var(--text-button-size);
-}
-
-.blue-button {
-	color: var(--text-secondary-color);
-	background-color: var(--primary-color);
 }
 
 #advise {
@@ -507,13 +504,15 @@ a {
 	display: flex;
 	background-color: #fff;
 	color: #000;
-	padding: 12px;
+	padding: 16px;
 	border: 1px solid var(--primary-color);
 	border-radius: 4px;
 }
 
 .action__button p {
 	font-size: var(--text-button-size);
+	text-align: center;
+	line-height: 24px;
 }
 
 .preview {
@@ -676,10 +675,16 @@ a {
 	line-height: 24px;
 }
 
+#quotes {
+	background: linear-gradient(0deg, rgb(230, 252, 255), rgb(255, 255, 255)) 0%
+		0% / auto no-repeat scroll padding-box border-box transparent;
+}
+
 .quotes__content {
 	display: flex;
 	flex-direction: column;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	background-color: #fff;
 }
 
 .quotes__texts {
@@ -691,7 +696,6 @@ a {
 	border-top-right-radius: 8px;
 	gap: 20px;
 	padding: 32px 20px;
-	
 }
 
 .quotes__texts__opinion p {
@@ -745,4 +749,126 @@ a {
 
 .quotes__survey a {
 	color: rgb(255, 255, 255, 0.8);
+}
+
+#purchase {
+	background: linear-gradient(rgb(230, 252, 255), rgb(255, 255, 255)) 0% 0% /
+		auto no-repeat scroll padding-box border-box transparent;
+}
+
+.purchase__content {
+	display: flex;
+	flex-direction: column;
+	padding: 80px 0;
+	gap: 60px;
+}
+
+.purchase__plans {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.plans__intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+}
+
+.intro__heading {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	text-align: center;
+}
+
+.intro__heading h2 {
+	font-size: var(--text-subtitle-size);
+}
+
+.intro__heading p {
+	font-size: var(--text-pbig-size);
+	line-height: 32px;
+}
+
+.plans__comparison {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.plan__card {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	padding: 24px 16px 48px 16px;
+	border: 1px solid #dfe1e6;
+}
+
+.card__info {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.plan__card h4 {
+	text-transform: uppercase;
+}
+
+.plan__price span {
+	font-size: 48px;
+}
+
+.plan__description {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.plan__description span {
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.plan__engage {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.affiliated__companies {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+}
+
+.affiliated__companies p {
+	font-size: var(--text-pbig-size);
+	font-weight: 500;
+	line-height: 32px;
+	text-align: center;
+}
+
+/* ---Modificadores de estilo--- */
+
+.blue-button {
+	color: var(--text-secondary-color);
+	background-color: var(--primary-color);
+}
+
+.plan-button {
+	border: 1px solid var(--selected-plan-color);
+}
+
+.plan-selected {
+	border: 2px solid var(--selected-plan-color);
+}
+
+.button-highlight {
+	background-color: var(--highlight-button-color);
 }

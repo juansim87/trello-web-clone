@@ -7,6 +7,14 @@
 		--text-survey: 34px;
 	}
 
+	.not-in-tablet {
+		display: none;
+	}
+
+	.show-in-tablet {
+		display: inherit;
+	}
+
 	.form__inputs {
 		width: auto;
 		flex-direction: row;
@@ -85,11 +93,10 @@
 		gap: 32px;
 	}
 
-.quotes__info {
+	.quotes__info {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: flex-end;
-
 	}
 
 	.quotes__survey {
@@ -101,6 +108,22 @@
 		line-height: 52px;
 	}
 
+	.purchase__content {
+		gap: 96px;
+	}
+
+	.purchase__plans {
+		gap: 64px;
+	}
+
+	.companies__logos {
+		width: 100%;
+	}
+
+	.companies__logos img {
+		width: 100%;
+	}
+
 }
 
 /* Media query para dispositivos de escritorio (mayores a 1024px y hasta 1439px) */
@@ -108,6 +131,10 @@
 	:root {
 		--container-width: 90%;
 		/* el container se vuelve a extender con laptop respecto a tablet */
+	}
+
+	.not-in-desktop {
+		display: none;
 	}
 
 	.not-in-mobile {
@@ -263,6 +290,40 @@
 		border-top-right-radius: 8px;
 		border-bottom-right-radius: 8px;
 	}
+
+	.plans__comparison {
+		flex-direction: row;
+		gap: 0px;
+	}
+
+	.plan__card {
+		flex: 1;
+		justify-content: space-between;
+	}
+
+	.plan__price {
+		min-height: 92px;
+	}
+
+	.plan__description p {
+		line-height: 24px;
+	}
+
+	.plan__engage {
+		min-height: 160px;
+		justify-content: space-between;
+	}
+
+	.plan__engage a {
+		align-self: center;
+		text-align: center;
+	}
+
+	.companies__logos {
+		width: 80%;
+	}
+
+
 }
 /* Media query para dispositivos de escritorio XXL (mayores a 1440px) */
 @media (min-width: 1440px) {
@@ -279,7 +340,6 @@
 		gap: 20px;
 	}
 
-
 	.customization__cards {
 		width: 100%;
 	}
@@ -288,5 +348,5 @@
 		min-width: 300px;
 	}
 
-
+	
 }
