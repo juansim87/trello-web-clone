@@ -5,6 +5,7 @@
 		--text-title-line-height: 52px;
 		--text-subtitle-size: 36px;
 		--text-survey: 34px;
+		--section-overflow: 180px;
 	}
 
 	.not-in-tablet {
@@ -16,15 +17,23 @@
 	}
 
 	.form__inputs {
-		width: auto;
 		flex-direction: row;
 		justify-content: center;
 		align-items: flex-start;
 		gap: 12px;
+		padding: 0 40px;
 	}
 
 	.form__inputs label {
 		display: inherit;
+		flex: 1;
+	}
+
+	.form__inputs label input {
+		width: 100%;
+		padding: 12px;
+		border-radius: 4px;
+		border: none;
 	}
 
 	.register-button {
@@ -58,7 +67,7 @@
 	}
 
 	.customization__content {
-		padding: 80px 0;
+		padding-bottom: 80px;
 	}
 
 	.customization__heading {
@@ -129,6 +138,7 @@
 @media (min-width: 1024px) {
 	:root {
 		--container-width: 90%;
+
 		/* el container se vuelve a extender con laptop respecto a tablet */
 	}
 
@@ -276,20 +286,6 @@
 		flex-direction: row;
 	}
 
-	.quotes__texts {
-		border-top-left-radius: 8px;
-		border-bottom-left-radius: 8px;
-		border-top-right-radius: 0px;
-		border-bottom-right-radius: 0px;
-	}
-
-	.quotes__survey {
-		border-top-left-radius: 0px;
-		border-bottom-left-radius: 0px;
-		border-top-right-radius: 8px;
-		border-bottom-right-radius: 8px;
-	}
-
 	.plans__comparison {
 		flex-direction: row;
 		gap: 0px;
@@ -326,8 +322,9 @@
 		background: url(/media/images/swing-graphics-left.svg) left center / contain
 				no-repeat scroll padding-box border-box,
 			url(/media/images/swing-graphics-right.svg) right center / contain
-				no-repeat scroll padding-box border-box, linear-gradient(60deg, rgb(82, 67, 170), rgb(237, 80, 180)) 0% 0% /
-				auto repeat scroll padding-box border-box rgb(82, 67, 170);;
+				no-repeat scroll padding-box border-box,
+			linear-gradient(60deg, rgb(82, 67, 170), rgb(237, 80, 180)) 0% 0% / auto
+				repeat scroll padding-box border-box rgb(82, 67, 170);
 	}
 
 	.engage__content .form__inputs {
@@ -391,6 +388,7 @@
 
 	.rrss {
 		padding: 0;
+	}
 }
 /* Media query para dispositivos de escritorio XXL (mayores a 1440px) */
 @media (min-width: 1440px) {

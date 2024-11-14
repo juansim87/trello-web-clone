@@ -54,6 +54,7 @@ a {
 	--text-button-size: 16px;
 	--text-antetitle: 15px;
 	--text-survey: 23px;
+	--section-overflow: 140px;
 	/* --nav-bar-height: 100px; */
 }
 
@@ -237,13 +238,6 @@ a {
 
 .form__inputs label {
 	display: none;
-}
-
-.form__inputs label input {
-	width: 276px;
-	padding: 12px;
-	border-radius: 4px;
-	border: none;
 }
 
 .register-button {
@@ -525,7 +519,8 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 40px 0;
+	padding-top: 40px;
+	margin-bottom: calc(0px - var(--section-overflow)) ;
 	gap: 40px;
 }
 
@@ -627,6 +622,7 @@ a {
 	justify-content: center;
 	padding: 20px 0;
 	gap: 40px;
+	padding-top: var(--section-overflow);
 }
 
 .customization__cards {
@@ -635,6 +631,13 @@ a {
 	justify-content: center;
 	gap: 32px;
 }
+
+
+
+/* SELECTORES DE HIJOS
+.customization__cards:nth-child(0){order:3}
+.customization__cards:nth-child(1){order:1}
+.customization__cards:nth-child(2){order:2} */
 
 .customization__card {
 	display: flex;
@@ -685,6 +688,8 @@ a {
 	flex-direction: column;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	background-color: #fff;
+	border-radius: 8px;
+	overflow: hidden;
 }
 
 .quotes__texts {
@@ -692,8 +697,6 @@ a {
 	flex-direction: column;
 	background-image: url(/media/images/quoting-marks.svg);
 	background-repeat: no-repeat;
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
 	gap: 20px;
 	padding: 32px 20px;
 }
@@ -731,8 +734,6 @@ a {
 .quotes__survey {
 	display: flex;
 	flex-direction: column;
-	border-bottom-left-radius: 8px;
-	border-bottom-right-radius: 8px;
 	background: linear-gradient(60deg, rgb(101, 84, 192), rgb(249, 156, 219)) 0%
 		0% / auto repeat scroll padding-box border-box rgb(101, 84, 192);
 	background-blend-mode: normal;
@@ -885,8 +886,6 @@ footer {
 	background-color: #172b4d;
 	color: #fff;
 }
-
-
 
 .about-us__content {
 	display: flex;
