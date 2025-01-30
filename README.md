@@ -1,18 +1,6 @@
-# Ejercicio Trello
+# Clonación de la Web de Trello
 
-Para practicar Responsive y Mobile First, tu misión es crear la web de Trello.
-
-## Parte 1
-La primera parte de la clase consiste en crear una arquitectura de CSS, los archivos necesarios del proyecto y la barra de navegación de Trello. Es decir, hasta el mismo punto donde nos hemos quedado juntos en la clase de Slack es hasta donde tienes que llegar con el ejercicio de Trello.
-
-## Parte 2
-Tu misión una vez que completes la segunda parte de la clase es terminar la web de trello.
-
-
-
-# Clonación de la Web de Discord
-
-Este repositorio contiene la recreación de la web de Discord, respetando su diseño y funcionalidad de acuerdo a la versión archivada del **16 de abril de 2024**.
+Este repositorio contiene la recreación de la web de Trello, respetando su diseño y funcionalidad de acuerdo a la versión archivada del **20 de mayo de 2024**.
 
 ---
 
@@ -30,7 +18,7 @@ Este repositorio contiene la recreación de la web de Discord, respetando su dis
 ---
 
 ## Demo
-[Demo del clon de Discord](https://trecho-web-clon.netlify.app)
+[Demo del clon de Trello](https://trecho-web-clon.netlify.app)
 
 ---
 
@@ -43,7 +31,7 @@ Este proyecto consiste en **clonar la web de Trello** utilizando únicamente una
 ---
 
 ## Objetivos
-1. **Recreación completa de la web de Discord**: Clonar la estructura, diseño y funcionalidad de la web original de Discord tal como aparece en las referencias de Archive.org.
+1. **Recreación completa de la web de Trello**: Clonar la estructura, diseño y funcionalidad de la web original de Discord tal como aparece en las referencias de Archive.org.
 2. **Aplicación de conocimientos en HTML y CSS**: Plasmar el código con una buena estructura de HTML, valorando la performance y el etiquetado ARIA. Se valora aplicación de metodologías de organización como BEM.
 3. **Diseño responsivo**: El proyecto se plantea como mobile first, siendo el punto de partida para el resto de formatos.
 4. **Renombrado de imágenes**: Asignar nombres más descriptivos a cada recurso visual, reflejando su contenido o propósito.  
